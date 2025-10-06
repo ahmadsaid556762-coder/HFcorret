@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>5 Dicas para uma Alimentação Mais Saudável — Portal de Antendimento</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style type="text/tailwindcss">
+        @layer components {
+            .header { @apply bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-slate-200; }
+            .nav-link { @apply text-slate-600 hover:text-emerald-600 transition-colors; }
+            .btn-primary { @apply bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300; }
+            .btn-outline { @apply bg-transparent text-emerald-600 font-semibold px-5 py-2.5 rounded-lg border border-emerald-500 hover:bg-emerald-50 transition-colors; }
+            .footer { @apply bg-teal-900 text-white py-16 px-6; }
+            .whatsapp-float { @apply fixed bottom-6 right-6 z-40 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg text-white text-3xl transition-transform duration-300 hover:scale-110 hover:rotate-12; }
+            
+            /* Estilos para o conteúdo do artigo */
+            .prose { @apply max-w-3xl mx-auto; }
+            .prose h2 { @apply text-2xl font-bold mt-8 mb-4 text-slate-800; }
+            .prose h3 { @apply text-xl font-bold mt-6 mb-3 text-slate-800; }
+            .prose p { @apply text-lg leading-relaxed text-slate-700 mb-4; }
+            .prose ul { @apply list-disc list-inside space-y-2 mb-4 text-lg text-slate-700; }
+            .prose a { @apply text-emerald-600 hover:underline; }
+            .prose blockquote { @apply border-l-4 border-emerald-500 pl-4 italic text-slate-600 my-6; }
+
+            .blog-card { @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased" style="font-family: 'Inter', sans-serif;">
+
+    <header class="header">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2" aria-label="Página Inicial">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500 flex items-center justify-center text-white font-bold text-lg">M</div>
+                <span class="text-xl font-bold text-slate-800">Atendimento Online</span>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 font-medium">
+                <a href="index.html#network" class="nav-link">Rede Credenciada</a>
+                <a href="index.html#plans" class="nav-link">Planos</a>
+                <a href="index.html#faq" class="nav-link">Dúvidas</a>
+            </nav>
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+solicitar+a+2%C2%AA+via+do+meu+boleto." class="btn-outline">Mensalidade em atraso</a>
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+iniciar+meu+atendimento." class="btn-primary">Fale conosco</a>
+            </div>
+            <button id="menu-btn" class="lg:hidden p-2 text-slate-700" aria-expanded="false" aria-label="Abrir menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="index.html#network" class="nav-link">Rede Credenciada</a>
+                <a href="index.html#plans" class="nav-link">Planos</a>
+                <a href="index.html#faq" class="nav-link">Dúvidas</a>
+                <hr>
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+solicitar+a+2%C2%AA+via+do+meu+boleto." class="btn-outline text-center">2ª Via de Boleto</a>
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+iniciar+meu+atendimento." class="btn-primary text-center">Começar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <article>
+            <header class="py-16 bg-slate-50 text-center">
+                <div class="container mx-auto px-6">
+                    <div class="text-sm text-slate-500">
+                        <a href="index.html" class="hover:underline">Início</a> &rarr; 
+                        <a href="index.html#blog" class="hover:underline">Espaço Saúde</a>
+                    </div>
+                    <span class="mt-4 inline-block text-sm text-emerald-600 font-semibold bg-emerald-100 px-3 py-1 rounded-full">NUTRIÇÃO</span>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mt-4 max-w-4xl mx-auto">5 dicas para uma alimentação mais saudável no dia a dia</h1>
+                    <p class="mt-4 text-slate-500">Publicado em 25 de setembro de 2025 · Por Dra. Camila Moreira</p>
+                </div>
+            </header>
+
+            <div class="container mx-auto px-6 -mt-10">
+                <img src="https://images.pexels.com/photos/1153369/pexels-photo-1153369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tigela com frutas e grãos variados" class="rounded-2xl shadow-xl w-full h-96 object-cover">
+            </div>
+
+            <div class="py-16 px-6">
+                <div class="prose">
+                    <p>Manter uma alimentação saudável parece um desafio em meio à correria da rotina, mas pequenas mudanças podem gerar um impacto enorme na sua saúde e bem-estar. Não se trata de dietas restritivas, mas de criar hábitos conscientes e duradouros. Aqui estão 5 dicas práticas para você começar hoje mesmo.</p>
+
+                    <h2>1. Desembale menos, descasque mais</h2>
+                    <p>A base de uma boa alimentação está nos alimentos frescos e naturais. Priorize frutas, verduras, legumes e grãos integrais em vez de produtos ultraprocessados, que são ricos em sódio, açúcares e gorduras ruins. Cozinhar sua própria comida dá a você total controle sobre os ingredientes.</p>
+                    
+                    <h2>2. Beba mais água</h2>
+                    <p>Muitas vezes, nosso corpo confunde sede com fome. Manter-se hidratado ao longo do dia é fundamental para o bom funcionamento do organismo, ajuda na digestão e pode até mesmo reduzir a vontade de comer fora de hora. Tenha sempre uma garrafinha por perto.</p>
+                    
+                    <blockquote>"A água é o nutriente mais importante e muitas vezes o mais negligenciado na nossa dieta diária."</blockquote>
+
+                    <h2>3. Planeje suas refeições</h2>
+                    <p>Tirar algumas horas no fim de semana para planejar o cardápio e preparar algumas refeições (como deixar saladas pré-lavadas ou grãos cozidos) facilita muito as escolhas saudáveis durante a semana. Quando a fome aperta, ter uma opção saudável à mão evita que você recorra ao fast-food.</p>
+
+                    <h2>4. Coma com atenção plena (Mindful Eating)</h2>
+                    <p>Reserve um momento para suas refeições, sem distrações como celular ou televisão. Mastigue devagar, aprecie os sabores e texturas dos alimentos. Isso não só melhora a digestão, como também aumenta a sensação de saciedade, fazendo com que você coma apenas o necessário.</p>
+
+                    <h2>5. Não pule o café da manhã</h2>
+                    <p>A primeira refeição do dia é essencial para "acordar" o metabolismo e fornecer energia para suas tarefas. Um bom café da manhã, rico em fibras e proteínas, ajuda a controlar a fome ao longo do dia e a manter os níveis de açúcar no sangue estáveis. Algumas opções incluem:</p>
+                    <ul>
+                        <li>Ovos mexidos com pão integral</li>
+                        <li>Iogurte natural com frutas e aveia</li>
+                        <li>Vitamina de frutas com sementes de chia ou linhaça</li>
+                    </ul>
+                    <p>Lembre-se: o equilíbrio é a chave. Não há problema em desfrutar de uma sobremesa ou de sua comida favorita de vez em quando. O importante é que a base da sua alimentação seja nutritiva e balanceada.</p>
+                </div>
+            </div>
+
+            <div class="pb-16 px-6">
+                <div class="max-w-3xl mx-auto flex items-center justify-center gap-4 border-t pt-8">
+                    <p class="font-semibold text-slate-700">Gostou? Compartilhe!</p>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=SEU_URL_DO_ARTIGO" target="_blank" class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full text-xl hover:bg-blue-700 transition" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/?text=Confira este artigo sobre nutrição saudável: SEU_URL_DO_ARTIGO" target="_blank" class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full text-xl hover:bg-green-600 transition" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=SEU_URL_DO_ARTIGO&title=5 Dicas para uma Alimentação Mais Saudável" target="_blank" class="w-10 h-10 flex items-center justify-center bg-blue-800 text-white rounded-full text-xl hover:bg-blue-900 transition" aria-label="Compartilhar no LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <section id="read-next" class="py-20 bg-slate-50">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-slate-900">Leia Também</h2>
+                    <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <div class="blog-card text-left">
+                            <img src="https://images.pexels.com/photos/3771045/pexels-photo-3771045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mulher com fones de ouvido, relaxando" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-emerald-600 font-semibold">BEM-ESTAR</span>
+                                <h3 class="mt-2 text-xl font-bold text-slate-800">Como cuidar da saúde mental no trabalho</h3>
+                                <a href="artigo-bem-estar.html" class="mt-4 inline-block text-emerald-600 font-semibold hover:underline">Ler mais &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="blog-card text-left">
+                            <img src="https://images.pexels.com/photos/3993220/pexels-photo-3993220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Aferindo pressão arterial" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-emerald-600 font-semibold">PREVENÇÃO</span>
+                                <h3 class="mt-2 text-xl font-bold text-slate-800">A importância do check-up anual</h3>
+                                <a href="artigo-prevencao.html" class="mt-4 inline-block text-emerald-600 font-semibold hover:underline">Ler mais &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <div class="container mx-auto text-center">
+            <h3 class="font-bold text-lg">Portal de Atendimento</h3>
+            <p class="mt-2 text-teal-200 text-sm max-w-md mx-auto">Em caso de dúvidas, entre em contato com nossa central: **+55 11 5123-0692**.</p>
+            <p class="mt-8 text-teal-300 text-xs">&copy; 2025 Portal de Atendimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a id="whatsapp-float-btn" href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+iniciar+meu+atendimento." class="whatsapp-float" aria-label="Iniciar conversa no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const WHATSAPP_PHONE_NUMBER = "551151230692"; 
+            const genericMessage = encodeURIComponent('Olá, gostaria de iniciar meu atendimento.');
+            const boletoMessage = encodeURIComponent('Olá, gostaria de solicitar a 2ª via do meu boleto.');
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            
+            if (menuBtn) {
+                menuBtn.addEventListener("click", () => {
+                    mobileMenu.classList.toggle("hidden");
+                    menuBtn.setAttribute("aria-expanded", !mobileMenu.classList.contains("hidden"));
+                });
+            }
+
+            // Atualiza os links de contato
+            const contactLinks = document.querySelectorAll('.btn-primary, .btn-primary-lg, #whatsapp-float-btn');
+            contactLinks.forEach(link => {
+                if (link.textContent.includes('Fale conosco') || link.textContent.includes('Começar Agora') || link.id === 'whatsapp-float-btn') {
+                    link.href = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${genericMessage}`;
+                }
+            });
+
+            // Atualiza o link de boleto
+            const boletoLink = document.querySelector('.btn-outline[href="index.html#boleto-section"]');
+            if (boletoLink) {
+                boletoLink.href = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${boletoMessage}`;
+            }
+
+            // Atualiza o número no rodapé
+            const footerPhone = document.querySelector('.footer p.mt-2');
+            if (footerPhone) {
+                footerPhone.innerHTML = `Em caso de dúvidas, entre em contato com nossa central: **+55 11 5123-0692**.`
+            }
+            
+            // Corrige os links de compartilhamento social para pegar a URL da página atual
+            const currentUrl = encodeURIComponent(window.location.href);
+            const socialLinks = document.querySelectorAll('.max-w-3xl.mx-auto .w-10.h-10');
+            
+            socialLinks.forEach(link => {
+                const icon = link.querySelector('i');
+                if (icon) {
+                    if (icon.classList.contains('fa-facebook-f')) {
+                        link.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+                    } else if (icon.classList.contains('fa-whatsapp')) {
+                        const whatsappShareMessage = encodeURIComponent('Confira este artigo sobre nutrição saudável: ') + currentUrl;
+                        link.href = `https://wa.me/?text=${whatsappShareMessage}`;
+                    } else if (icon.classList.contains('fa-linkedin-in')) {
+                        const linkedinShareTitle = encodeURIComponent(document.title);
+                        link.href = `https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}&title=${linkedinShareTitle}`;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

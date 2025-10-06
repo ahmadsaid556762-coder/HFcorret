@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Importância do Check-up Anual — HF Saúde Verde</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style type="text/tailwindcss">
+        @layer components {
+            .header { @apply bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-slate-200; }
+            .nav-link { @apply text-slate-600 hover:text-emerald-600 transition-colors; }
+            .btn-primary { @apply bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-semibold px-5 py-2.5 rounded-lg hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300; }
+            .btn-outline { @apply bg-transparent text-emerald-600 font-semibold px-5 py-2.5 rounded-lg border border-emerald-500 hover:bg-emerald-50 transition-colors; }
+            .footer { @apply bg-teal-900 text-white py-16 px-6; }
+            .whatsapp-float { @apply fixed bottom-6 right-6 z-40 flex items-center justify-center w-16 h-16 bg-[#25D366] rounded-full shadow-lg text-white text-3xl transition-transform duration-300 hover:scale-110 hover:rotate-12; }
+            
+            /* Estilos para o conteúdo do artigo */
+            .prose { @apply max-w-3xl mx-auto; }
+            .prose h2 { @apply text-2xl font-bold mt-8 mb-4 text-slate-800; }
+            .prose h3 { @apply text-xl font-bold mt-6 mb-3 text-slate-800; }
+            .prose p { @apply text-lg leading-relaxed text-slate-700 mb-4; }
+            .prose ul { @apply list-disc list-inside space-y-2 mb-4 text-lg text-slate-700; }
+            .prose a { @apply text-emerald-600 hover:underline; }
+            .prose blockquote { @apply border-l-4 border-emerald-500 pl-4 italic text-slate-600 my-6; }
+
+            .blog-card { @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1; }
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased" style="font-family: 'Inter', sans-serif;">
+
+    <header class="header">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2" aria-label="Página Inicial">
+                <div class="w-9 h-9 rounded-lg bg-emerald-500 flex items-center justify-center text-white font-bold text-lg">M</div>
+                <span class="text-xl font-bold text-slate-800">Atendimento Online</span>
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 font-medium">
+                <a href="index.html#network" class="nav-link">Rede Credenciada</a>
+                <a href="index.html#plans" class="nav-link">Planos</a>
+                <a href="index.html#faq" class="nav-link">Dúvidas</a>
+            </nav>
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+solicitar+a+2%C2%AA+via+do+meu+boleto." class="btn-outline">Mensalidade em atraso</a>
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+iniciar+meu+atendimento." class="btn-primary">Fale conosco</a>
+            </div>
+            <button id="menu-btn" class="lg:hidden p-2 text-slate-700" aria-expanded="false" aria-label="Abrir menu">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-slate-200">
+            <div class="px-6 py-4 flex flex-col gap-4">
+                <a href="index.html#network" class="nav-link">Rede Credenciada</a>
+                <a href="index.html#plans" class="nav-link">Planos</a>
+                <a href="index.html#faq" class="nav-link">Dúvidas</a>
+                <hr>
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+solicitar+a+2%C2%AA+via+do+meu+boleto." class="btn-outline text-center">2ª Via de Boleto</a>
+                <a href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+iniciar+meu+atendimento." class="btn-primary text-center">Começar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <article>
+            <header class="py-16 bg-slate-50 text-center">
+                <div class="container mx-auto px-6">
+                    <div class="text-sm text-slate-500">
+                        <a href="index.html" class="hover:underline">Início</a> &rarr; 
+                        <a href="index.html#blog" class="hover:underline">Espaço Saúde</a>
+                    </div>
+                    <span class="mt-4 inline-block text-sm text-emerald-600 font-semibold bg-emerald-100 px-3 py-1 rounded-full">PREVENÇÃO</span>
+                    <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mt-4 max-w-4xl mx-auto">A importância do check-up anual para uma vida longa e saudável</h1>
+                    <p class="mt-4 text-slate-500">Publicado em 25 de setembro de 2025 · Por Dr. Ricardo Bastos</p>
+                </div>
+            </header>
+
+            <div class="container mx-auto px-6 -mt-10">
+                <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Médico conversando com um paciente" class="w-full h-48 object-cover" alt="Médico aferindo a pressão arterial de um paciente" class="rounded-2xl shadow-xl w-full h-96 object-cover">
+            </div>
+
+            <div class="py-16 px-6">
+                <div class="prose">
+                    <p>Muitas pessoas só procuram um médico quando sentem algum sintoma, mas a verdadeira chave para uma vida saudável está na prevenção. O check-up anual é uma avaliação médica completa que serve como uma ferramenta poderosa para monitorar sua saúde, prevenir doenças e garantir que você esteja no seu melhor estado, física e mentalmente.</p>
+
+                    <h2>1. Prevenção e Detecção Precoce de Doenças</h2>
+                    <p>Este é, sem dúvida, o benefício mais crucial. Muitas condições graves, como hipertensão, diabetes, colesterol alto e até mesmo alguns tipos de câncer, são silenciosas em seus estágios iniciais. Através de exames de sangue, imagem e avaliações clínicas, seu médico pode identificar alterações mínimas e fatores de risco antes que se tornem problemas sérios, permitindo um tratamento muito mais eficaz e com maiores chances de sucesso.</p>
+
+                    <blockquote>"Cuidar da saúde preventivamente não é um custo, é o melhor investimento que você pode fazer em si mesmo."</blockquote>
+
+                    <h2>2. Monitoramento da Saúde e de Condições Crônicas</h2>
+                    <p>Para quem já possui condições crônicas, como asma ou problemas de tireoide, o check-up é essencial para acompanhar a evolução do quadro e ajustar medicações e tratamentos. Além disso, ele permite avaliar como seu estilo de vida (dieta, exercícios, estresse) está impactando sua saúde geral, oferecendo uma visão clara do que está funcionando e do que precisa ser melhorado.</p>
+
+                    <h2>3. Atualização de Vacinas e Orientações de Saúde</h2>
+                    <p>A necessidade de vacinação não termina na infância. Adultos precisam de reforços para diversas doenças, como tétano, difteria e gripe. O check-up anual é o momento ideal para verificar se seu cartão de vacinas está em dia. É também uma oportunidade para conversar com seu médico sobre seu momento de vida, recebendo orientações personalizadas sobre dieta, atividade física, saúde mental e planejamento familiar.</p>
+
+                    <h2>Quais exames são comuns em um check-up?</h2>
+                    <p>A lista de exames pode variar conforme sua idade, gênero e histórico de saúde, mas geralmente inclui:</p>
+                    <ul>
+                        <li>Hemograma completo (exame de sangue)</li>
+                        <li>Medição de glicemia, colesterol e triglicerídeos</li>
+                        <li>Aferição da pressão arterial</li>
+                        <li>Exame de urina e fezes</li>
+                        <li>Avaliação de peso e Índice de Massa Corporal (IMC)</li>
+                    </ul>
+                    <p>Converse com seu médico de confiança e agende sua avaliação. Cuidar preventivamente é um ato de amor com seu futuro.</p>
+                </div>
+            </div>
+
+            <div class="pb-16 px-6">
+                <div class="max-w-3xl mx-auto flex items-center justify-center gap-4 border-t pt-8">
+                    <p class="font-semibold text-slate-700">Gostou? Compartilhe!</p>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=SEU_URL_DO_ARTIGO" target="_blank" class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full text-xl hover:bg-blue-700 transition" aria-label="Compartilhar no Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/?text=Confira este artigo sobre a importância do check-up anual: SEU_URL_DO_ARTIGO" target="_blank" class="w-10 h-10 flex items-center justify-center bg-green-500 text-white rounded-full text-xl hover:bg-green-600 transition" aria-label="Compartilhar no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=SEU_URL_DO_ARTIGO&title=A%20Importância%20do%20Check-up%20Anual" target="_blank" class="w-10 h-10 flex items-center justify-center bg-blue-800 text-white rounded-full text-xl hover:bg-blue-900 transition" aria-label="Compartilhar no LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <section id="read-next" class="py-20 bg-slate-50">
+                <div class="container mx-auto px-6 text-center">
+                    <h2 class="text-3xl font-bold text-slate-900">Leia Também</h2>
+                    <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <div class="blog-card text-left">
+                            <img src="https://images.pexels.com/photos/1153369/pexels-photo-1153369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tigela com frutas e grãos" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-emerald-600 font-semibold">NUTRIÇÃO</span>
+                                <h3 class="mt-2 text-xl font-bold text-slate-800">5 dicas para uma alimentação mais saudável</h3>
+                                <a href="artigo-alimentacao.html" class="mt-4 inline-block text-emerald-600 font-semibold hover:underline">Ler mais &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="blog-card text-left">
+                            <img src="https://images.pexels.com/photos/3771045/pexels-photo-3771045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Mulher com fones de ouvido, relaxando" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <span class="text-sm text-emerald-600 font-semibold">BEM-ESTAR</span>
+                                <h3 class="mt-2 text-xl font-bold text-slate-800">Como cuidar da saúde mental no trabalho</h3>
+                                <a href="artigo-bem-estar.html" class="mt-4 inline-block text-emerald-600 font-semibold hover:underline">Ler mais &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <footer class="footer">
+        <div class="container mx-auto text-center">
+            <h3 class="font-bold text-lg">Portal de Atendimento</h3>
+            <p class="mt-2 text-teal-200 text-sm max-w-md mx-auto">Em caso de dúvidas, entre em contato com nossa central: +55 11 5123-0692.</p>
+            <p class="mt-8 text-teal-300 text-xs">&copy; 2025 Portal de Atendimento. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a id="whatsapp-float-btn" href="https://wa.me/551151230692?text=Ol%C3%A1%2C+gostaria+de+iniciar+meu+atendimento." class="whatsapp-float" aria-label="Iniciar conversa no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const WHATSAPP_PHONE_NUMBER = "551151230692"; 
+            const genericMessage = encodeURIComponent('Olá, gostaria de iniciar meu atendimento.');
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            if (menuBtn) {
+                menuBtn.addEventListener("click", () => {
+                    mobileMenu.classList.toggle("hidden");
+                    menuBtn.setAttribute("aria-expanded", !mobileMenu.classList.contains("hidden"));
+                });
+            }
+
+            const whatsappFloatBtn = document.getElementById('whatsapp-float-btn');
+            const primaryBtns = document.querySelectorAll('.btn-primary, .btn-primary-lg');
+            
+            if (whatsappFloatBtn) {
+                whatsappFloatBtn.href = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${genericMessage}`;
+            }
+
+            primaryBtns.forEach(btn => {
+                if (btn.textContent.includes('Fale conosco') || btn.textContent.includes('Começar Agora')) {
+                    btn.href = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${genericMessage}`;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
